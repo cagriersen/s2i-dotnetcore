@@ -47,7 +47,7 @@ ENV ENABLED_COLLECTIONS="$ENABLED_COLLECTIONS rh-nodejs8"
 
 # For backwards compatibility, s2i builds default to the oldest sdk in the image.
 # We keep the patch at 'x00', the latest patch version is automatically picked up.
-ENV DOTNET_SDK_BASE_VERSION=2.1.300 \
+ENV DOTNET_SDK_BASE_VERSION=2.1.500 \
 # Needed for the `dotnet watch` to detect changes in a container.
     DOTNET_USE_POLLING_FILE_WATCHER=true \
 # Make all sdks aware of the latest ASP.NET Core version
